@@ -1,0 +1,18 @@
+<br><br>
+
+<div class="container">
+        <h1>로그인</h1>
+<form method = "POST" action="{%url 'login'%}">
+    {% csrf_token %}
+    Username:
+    <br>
+    <input name="username" type="text" value="">
+    <br>
+    Password:
+    <br>
+    <input name="password1" type="password" value="">
+    <br>
+    <br>
+    <input class="btn btn-primary" type="submit" value="Sign Up">
+</form>
+</div>
